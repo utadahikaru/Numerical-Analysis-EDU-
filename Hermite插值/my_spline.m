@@ -27,5 +27,6 @@ for j=1:n-1
     xh=[x(j),x(j+1)];
     yh=[y(j),y(j+1)];
     mh=[m(j),m(j+1)];
-    H(j,:)=my_Hermite(xh,yh,mh);
+    H(j,:)=lsj_Hermite(xh,yh,mh);
+end
 end
